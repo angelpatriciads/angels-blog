@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding:0;
+}
+
+header {
+    display: inline;
+}
+
+header.navbar-container {
+    display: inline;
+}
+
+header.navbar-container .nav-list {
+    background-color: #ffffff;
+    align-items: center;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 6rem;
+
+}
+   
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+   
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #B0526A;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+    
+}
+   
+header.navbar-container .nav-list li:hover a {
+    background-color: #E96E71;
+    color: white;
+}
+
+main {
+    padding: 25px;
+    display: flex;
+    gap: 2rem;
+}
+
+main .content {
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem 5rem;
+}
+
+header.navbar-container .logo img {
+    width: 500px;
+}
+
+header.navbar-container .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,  #FFE2C8 , rgb(255, 255, 255));
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 5px;
+}
+
+main .content .card h2 {
+    font-size: 35px;
+    color: #B0526A;
+    text-align: center;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 30px;
+}
+
+main .content .card p{
+    text-indent: 50px;
+    text-align: justify;
+}
+
+main .content .card section h3 {
+    font-size: 22px;
+}
+
+main .content .card .selfdev{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 5px;
+    max-width: 100%;
+}
+
+main .content .card .selfdev .thumb {
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 10px;
+    flex:1 ;
+}
+
+main .content .card .selfdev .thumb h3{
+    text-align: center;
+}
+
+main .content .card .selfdev .thumb .thumb-img{
+    width: 100%;
+}
+
+main .content .card .selfdev .thumb p{
+    text-indent: 0px;
+    text-align: center;
+}
+
+main .content .card .readmore {
+    text-align: center;
+}
+
+#more {display: none;}
+
+main .content .card .readmore button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+    color: white;
+   
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #E96C70;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+   
+main .content .card .readmore button:hover {
+    border: 3px solid #E96C70;
+    color: #E96C70;
+    background-color: transparent;
+}
+
+main aside{
+    flex: 1;
+}
+
+main aside .profile header {
+    text-align: center;
+}
+
+main aside .profile header h2 {
+    font-size: 30px;
+    color: #B0526A;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+}
+
+main aside .profile header p.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+main aside .profile.card header .profile-img {
+    align-items: center;
+}
+
+main aside .profile header img{
+    width: 200px;
+    align-items: center;
+}
+
+main aside .profile h3 {
+    font-size: 20px;
+    color: #B0526A;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+table {
+    text-align: left;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table th {
+    width: 50%;
+}
+
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+   
+main aside .social-media ul {
+    padding: 0rem 1rem;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/*menghapus titik*/
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:#E96C70;
+    transition: all .1s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: #F1BD8D;
+}
+
+footer {
+    padding: 20px;
+    font-size: 20px;
+    color: #B0526A;
+    background-color: #FFE2C8;
+    text-align: center;
+}
+
+figure {
+    object-position: center;
+    text-align: center;
+}
+
+figure img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    main{
+      flex-flow: column nowrap;
+    }
+  
+    main aside{
+      padding: 0;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    main{
+        flex-flow: column nowrap;
+    }  
+    
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        /* column-gap: .5rem; */
+    }
+    
+    main .content .card .selfdev{
+        flex: 3;
+        display: flex;
+        flex-flow: column;
+        gap: 2rem 1rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    header.navbar-container .logo img {
+        width: 200px;
+    }
+
+
+}
